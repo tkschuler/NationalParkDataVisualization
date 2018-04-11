@@ -2,3 +2,4 @@
 *.py linguist-vendored=false
 *.csv linguist-vendored=false
 *.pdf linguist-vendored=false
+*.html linguist-vendored=true
