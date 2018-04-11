@@ -2,6 +2,8 @@
 
 This project uses python to scrape and organize data from the U.S. National Park Service's online visitor use statistics database to create interactive html plots to better visualize the history of America's National Parks using Bokeh, Plotly, and Google Charts.
 
+### View the Data Visualization - [National Park Data Visualization](https://trizzletravels.com/national-parks-data-visualization/)
+
 ## Getting Started
 
 ### Prerequisites
@@ -30,6 +32,7 @@ All data used in this code can be accessed on free online databases:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
 
 
 
