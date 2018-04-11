@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Acres</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="e37538c0-101e-4c3c-98d1-6155ca2fc4d0"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              (function(root) {
+                function embed_document(root) {
+                  var docs_json = {"8740e3e2-d89c-435b-924d-72b740c5934a":{"roots":{"references":[{"attributes":{"below":[{"id":"18e396cf-6926-4c9d-85cd-3ab65be96ea7","type":"LogAxis"}],"left":[{"id":"423eccf6-586b-43da-819f-a09208af9b32","type":"LogAxis"}],"plot_width":700,"renderers":[{"id":"18e396cf-6926-4c9d-85cd-3ab65be96ea7","type":"LogAxis"},{"id":"d32a2b96-9ffa-4f6d-80ee-52cfb7566a12","type":"Grid"},{"id":"423eccf6-586b-43da-819f-a09208af9b32","type":"LogAxis"},{"id":"0b9ba86e-a3d1-4722-b2a3-65fab298e3c1","type":"Grid"},{"id":"cede6283-a828-4884-a039-af8266dfa4f7","type":"GlyphRenderer"},{"id":"9940a004-728c-4995-877c-f163556bc218","type":"ColorBar"}],"right":[{"id":"9940a004-728c-4995-877c-f163556bc218","type":"ColorBar"}],"title":{"id":"a1c96820-5b2d-4256-adbc-266ffac1c069","type":"Title"},"toolbar":{"id":"a8e01806-df91-4a26-81b1-1623ca8b2a00","type":"Toolbar"},"toolbar_location":null,"x_range":{"id":"cd3b45f2-db5f-44be-bdfa-4e7cb91c11df","type":"DataRange1d"},"x_scale":{"id":"a7a2f1b5-0f81-4b64-b214-f37a5967c4f4","type":"LogScale"},"y_range":{"id":"09a92244-40a1-462e-b2b3-5716e2f79569","type":"DataRange1d"},"y_scale":{"id":"9b245eb8-5a92-4472-8c63-8238f88443af","type":"LogScale"}},"id":"6e411fb3-2735-4578-9c5e-e9e07d75cfc9","subtype":"Figure","type":"Plot"},{"attributes":{"high":950705.0,"low":-0.0,"palette":["#F68E44","#EF7D4F","#E66D5A","#DC5D66","#D14E72","#C33E7F","#B62F8B","#A51F97","#9511A1","#8204A7","#6D00A8","#5901A4","#42039D","#2B0594","#0C0786"]},"id":"a2a06e37-da3d-4f77-9c55-fc41a4588231","type":"LinearColorMapper"},{"attributes":{"callback":null},"id":"cd3b45f2-db5f-44be-bdfa-4e7cb91c11df","type":"DataRange1d"},{"attributes":{"desired_num_ticks":11},"id":"eb0e5c92-e8d3-4396-9901-8eabd603cb61","type":"BasicTicker"},{"attributes":{"dimension":1,"plot":{"id":"6e411fb3-2735-4578-9c5e-e9e07d75cfc9","subtype":"Figure","type":"Plot"},"ticker":{"id":"19f51807-ebf2-4091-b9b9-4ae71db42037","type":"LogTicker"}},"id":"0b9ba86e-a3d1-4722-b2a3-65fab298e3c1","type":"Grid"},{"attributes":{"num_minor_ticks":10},"id":"3422161a-6256-4ea8-a3c7-946c7535a8da","type":"LogTicker"},{"attributes":{},"id":"82ce1b57-caa4-4500-a6e6-46a1b00e9a6b","type":"NumeralTickFormatter"},{"attributes":{"num_minor_ticks":10},"id":"19f51807-ebf2-4091-b9b9-4ae71db42037","type":"LogTicker"},{"attributes":{"data_source":{"id":"cf5e0b9d-f3bc-4870-9924-4c39a8bb4d9a","type":"ColumnDataSource"},"glyph":{"id":"6e42eb72-7e6e-4502-a364-0cf2e50de0f0","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"91be10ea-8f41-4057-a31b-d075a5ff8130","type":"Circle"},"selection_glyph":null,"view":{"id":"3f2bbd54-07d6-45c8-af8e-e31a9697cf8f","type":"CDSView"}},"id":"cede6283-a828-4884-a039-af8266dfa4f7","type":"GlyphRenderer"},{"attributes":{"callback":null,"tooltips":[["Park","@index"],["Acres","@Acres{0,0}"],["Visitors","@5YearVisitAvg{0,0}"]]},"id":"60270226-93fa-4970-b107-d8ee9a10ac30","type":"HoverTool"},{"attributes":{"source":{"id":"cf5e0b9d-f3bc-4870-9924-4c39a8bb4d9a","type":"ColumnDataSource"}},"id":"3f2bbd54-07d6-45c8-af8e-e31a9697cf8f","type":"CDSView"},{"attributes":{"plot":null,"text":"NPS Visitors vs. Acreage"},"id":"a1c96820-5b2d-4256-adbc-266ffac1c069","type":"Title"},{"attributes":{"axis_label":"Acres","formatter":{"id":"e4cafb77-c11c-4781-92b4-300cf4f819af","type":"NumeralTickFormatter"},"plot":{"id":"6e411fb3-2735-4578-9c5e-e9e07d75cfc9","subtype":"Figure","type":"Plot"},"ticker":{"id":"3422161a-6256-4ea8-a3c7-946c7535a8da","type":"LogTicker"}},"id":"18e396cf-6926-4c9d-85cd-3ab65be96ea7","type":"LogAxis"},{"attributes":{"axis_label":"5 Year Visitor Avg","formatter":{"id":"47e640ac-f5c1-4551-af9e-3bceec3cf27d","type":"NumeralTickFormatter"},"plot":{"id":"6e411fb3-2735-4578-9c5e-e9e07d75cfc9","subtype":"Figure","type":"Plot"},"ticker":{"id":"19f51807-ebf2-4091-b9b9-4ae71db42037","type":"LogTicker"}},"id":"423eccf6-586b-43da-819f-a09208af9b32","type":"LogAxis"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"60270226-93fa-4970-b107-d8ee9a10ac30","type":"HoverTool"}]},"id":"a8e01806-df91-4a26-81b1-1623ca8b2a00","type":"Toolbar"},{"attributes":{"plot":{"id":"6e411fb3-2735-4578-9c5e-e9e07d75cfc9","subtype":"Figure","type":"Plot"},"ticker":{"id":"3422161a-6256-4ea8-a3c7-946c7535a8da","type":"LogTicker"}},"id":"d32a2b96-9ffa-4f6d-80ee-52cfb7566a12","type":"Grid"},{"attributes":{},"id":"9b245eb8-5a92-4472-8c63-8238f88443af","type":"LogScale"},{"attributes":{"fill_color":{"field":"5YearCamperAvg","transform":{"id":"a2a06e37-da3d-4f77-9c55-fc41a4588231","type":"LinearColorMapper"}},"line_color":{"value":null},"size":{"units":"screen","value":9},"x":{"field":"Acres"},"y":{"field":"5YearVisitAvg"}},"id":"6e42eb72-7e6e-4502-a364-0cf2e50de0f0","type":"Circle"},{"attributes":{},"id":"a7a2f1b5-0f81-4b64-b214-f37a5967c4f4","type":"LogScale"},{"attributes":{},"id":"47e640ac-f5c1-4551-af9e-3bceec3cf27d","type":"NumeralTickFormatter"},{"attributes":{"callback":null},"id":"09a92244-40a1-462e-b2b3-5716e2f79569","type":"DataRange1d"},{"attributes":{"callback":null,"column_names":["index","2016Campers","5YearVisitAvg","2016Hours","Acres","5YearHoursAvg","2016Visits","5YearCamperAvg"],"data":{"2016Campers":{"__ndarray__":"QANFSAAGO0cAd2JHQAQOSACgHUUAdABHAG7KRwD+0kcAnClHAAB7QwDKskYAAI9DADNxRwAAAADAZVRIgAHsRwBwuUUAfvlGABj5RQDo3EUgcJNIoLweSUC9okgAPiZHAD1OR2D6yEgALJtGAJAnRgCYMEYAqrtGAJ7KRgAKnEgAUCFFACAHRYCVF0gAUNxFALDKRQBYvEcALG5HAKZeR4BYE0gAAAAAAFjHRoDYl0gAAPNDAAAAAADwFkZASVpIAIDpRECzeUiASmBIAB0ARwCId0YAczVHAGwMRgAAAACQ6UJJIFiESYDgZkgAAMB/","dtype":"float32","shape":[60]},"2016Hours":{"__ndarray__":"Mi2tS8SbuErGiY9KedYcS1gc0UmYxMJJLsBPS/bjqUow4sNJoLrcSVyEU0pATAlJHP2HSnyo2EoKExVLfIL4SoASTUmA+VZKgEc/SHZMzUrQi/pLXtazTG7SmUsYBbBJXJMOSiHzn0xAv+5IRFQ3StC1MUvIgFdKWD+USVOXgEtA0mNIUIyNSRYqmksA1EZHAJA0SHg3rUpwYFhK9KV8StVIc0sAt2FHYEcQSUorfkuoqr9JEFQ8SaC5/Ek2tupLCGKSSaxDGUy30CpLhCYgSlhnGkqgLJ9JUFHmSeTvXUrDAKFMaVKUTFT53EsAAMB/","dtype":"float32","shape":[60]},"2016Visits":{"__ndarray__":"dH9MSrCRwUlAP4JJwL++SKBS+0iAcGhIJHAqSqCBPUnIIYhJoOrjSEC8tUjAeAxIgMNESXjpE0qQTaRJMBCqSYDKo0dQjmNJAPwcRmBI/kgg0TRKTAe4Sngvk0rAEg5IQNW9SAjgq0vAkzFIMMudSXR1ZEq0221KAJ7DRlx+GUoAuhNHwDSpSFDKG0kApLVGANykRkDgAkkA2DJJwKYSSbBB6kkAuOFGAMzfRlDEf0ogFB1JwIBSSJDuAkn+IYpK+E9kSvjDmkl4y7BJoKg5SeAcJUkAPmxIMKtTSYBjmkdCgaZKtDafSsa+g0oAAMB/","dtype":"float32","shape":[60]},"5YearCamperAvg":{"__ndarray__":"QFsgSACRLEcAskdHgPLVRwAwDUUAKqxGgD+1R4BRt0cAZhhHAAAwQwDYqkYAAOVDAOBfRwAAAIDAURpIADzfRwCwgEUAeuZGACDzRQDYv0WAI31IoND+SIA7qEgAhQ1HADEcRwBnq0gA8IFGAEgURgAgTUYAFplGALwGR+DyhUgAYDJFAADIRIAK9UcAQGxFALBCRQA2t0cAIkhHAAw0R4AiBkgAAACAAASuRqBtgEgAAKpDAAAAgAB49kUAGThIAMDPRMCoQkiA5DtIAEDkRgDkZ0YAvQZHAEgORgAAAICwfjlJEBtoSQDSZkgAAMB/","dtype":"float32","shape":[60]},"5YearHoursAvg":{"__ndarray__":"IpFeS1yqmkqcL4RKSNYCS3DTzEnQ8pJJXswgSwZbikoYtqJJgNbFSbivJUqA8NhIpE9pSuBYy0pQIfBKSFPhStDhMEnIc2FKgFg7SJShykoV4dVLSxqZTAoClUsAHpZJwMPZSeorj0wgqN9IbOUbSga2IUvoAkNKMLSKSeVVSUtgYpFIsGpnSY9RiEsAaOdGgCvFR+qynErodElKiFFXSkJ3YUsApRBHwBT5SO2BZEtg+dlJUBNBSbgF20ljjb1LkHCCSVkAAEwZlxRLsOgGSkSyIUpIM6NJQP3RSYQRUkofM5FMSUCGTDODs0sAAMB/","dtype":"float32","shape":[60]},"5YearVisitAvg":{"__ndarray__":"CNsjSqAdnUnQhXFJoO6oSMBR9kiAyD9IEAwASsCDDEnAu1RJQM3LSICfkUiAT+dHsEccSZiLB0pgMIpJOAuoSQB+jkdQAH9JAIQtRsCL+0jYrRNKZHucSiRKhkoA1NlHoF6NSGNRoksAHx5IEFWCSWTzWUoULltKAL6ORrDJ2UkAfABHgJ6QSJDGCkkAAF9GADB9RuDS30hQZSRJoKz9SNgZ3kkAppBGAOy1RhjOeErg+y1JwK9VSECX3kigXV1KjIhcShD7f0m415pJAEsTSaCQPElA92dIkKRASQAikkfa/pBKenWBShDJTUoAAMB/","dtype":"float32","shape":[60]},"Acres":[49057,76679,242756,801163,172971,30750,35835,337598,241904,46766,249561,26276,183224,32572,3373063,4740911,64701,1400539,7523897,3223383,1013129,1201647,310044,77180,107342,522427,86367,33265,323431,5549,571790,790636,3674529,669650,461901,1750716,2619816,106589,52830,52485,236382,8257,504781,922650,221416,26686,138999,265795,91716,404063,199195,70447,14948,218200,33971,8323146,2219791,761748,147237,52094360],"index":["Acadia NP","Arches NP","Badlands NP","Big Bend NP","Biscayne NP","Black Canyon of the Gunnison NP","Bryce Canyon NP","Canyonlands NP","Capitol Reef NP","Carlsbad Caverns NP","Channel Islands NP","Congaree NP","Crater Lake NP","Cuyahoga Valley NP","Death Valley NP","Denali NP & PRES","Dry Tortugas NP","Everglades NP","Gates of the Arctic NP & PRES","Glacier Bay NP & PRES","Glacier NP","Grand Canyon NP","Grand Teton NP","Great Basin NP","Great Sand Dunes NP & PRES","Great Smoky Mountains NP","Guadalupe Mountains NP","Haleakala NP","Hawaii Volcanoes NP","Hot Springs NP","Isle Royale NP","Joshua Tree NP","Katmai NP & PRES","Kenai Fjords NP","Kings Canyon NP","Kobuk Valley NP","Lake Clark NP & PRES","Lassen Volcanic NP","Mammoth Cave NP","Mesa Verde NP","Mount Rainier NP","National Park of American Samoa","North Cascades NP","Olympic NP","Petrified Forest NP","Pinnacles NP","Redwood NP","Rocky Mountain NP","Saguaro NP","Sequoia NP","Shenandoah NP","Theodore Roosevelt NP","Virgin Islands NP","Voyageurs NP","Wind Cave NP","Wrangell-St. Elias NP & PRES","Yellowstone NP","Yosemite NP","Zion NP","TotalVisits"]}},"id":"cf5e0b9d-f3bc-4870-9924-4c39a8bb4d9a","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":9},"x":{"field":"Acres"},"y":{"field":"5YearVisitAvg"}},"id":"91be10ea-8f41-4057-a31b-d075a5ff8130","type":"Circle"},{"attributes":{},"id":"e4cafb77-c11c-4781-92b4-300cf4f819af","type":"NumeralTickFormatter"},{"attributes":{"color_mapper":{"id":"a2a06e37-da3d-4f77-9c55-fc41a4588231","type":"LinearColorMapper"},"formatter":{"id":"82ce1b57-caa4-4500-a6e6-46a1b00e9a6b","type":"NumeralTickFormatter"},"location":[0,0],"major_label_text_font_size":{"value":"5pt"},"plot":{"id":"6e411fb3-2735-4578-9c5e-e9e07d75cfc9","subtype":"Figure","type":"Plot"},"ticker":{"id":"eb0e5c92-e8d3-4396-9901-8eabd603cb61","type":"BasicTicker"},"title":"# of Campers","title_text_font_size":{"value":"7pt"}},"id":"9940a004-728c-4995-877c-f163556bc218","type":"ColorBar"}],"root_ids":["6e411fb3-2735-4578-9c5e-e9e07d75cfc9"]},"title":"Bokeh Application","version":"0.12.10"}};
+                  var render_items = [{"docid":"8740e3e2-d89c-435b-924d-72b740c5934a","elementid":"e37538c0-101e-4c3c-98d1-6155ca2fc4d0","modelid":"6e411fb3-2735-4578-9c5e-e9e07d75cfc9"}];
+              
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                }
+              
+                if (root.Bokeh !== undefined) {
+                  embed_document(root);
+                } else {
+                  var attempts = 0;
+                  var timer = setInterval(function(root) {
+                    if (root.Bokeh !== undefined) {
+                      embed_document(root);
+                      clearInterval(timer);
+                    }
+                    attempts++;
+                    if (attempts > 100) {
+                      console.log("Bokeh: ERROR: Unable to embed document because BokehJS library is missing")
+                      clearInterval(timer);
+                    }
+                  }, 10, root)
+                }
+              })(window);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>

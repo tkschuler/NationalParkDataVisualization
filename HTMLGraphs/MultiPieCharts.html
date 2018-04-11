@@ -1,0 +1,140 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart2);
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart2() {
+        var data2 = google.visualization.arrayToDataTable([
+['State', 'Acres'],
+['Alaska', 32526048],
+['California', 6313246],
+['Wyoming', 2529835],
+['Washington', 1663813],
+['Florida', 1638211],
+['Arizona', 1514779],
+['Montana', 1013129],
+['Texas', 887530],
+['Utah', 839253],
+['Michigan', 571790],
+['Tennessee', 522427],
+['Colorado', 456372],
+['Hawaii', 356696],
+['South Dakota', 276727],
+['Minnesota', 218200],
+['Virginia', 199195],
+['Oregon', 183224],
+['Nevada', 77180],
+['North Dakota', 70447],
+['Kentucky', 52830],
+['Maine', 49057],
+['New Mexico', 46766],
+['Ohio', 32572],
+['South Carolina', 26276],
+['U.S. Virgin Islands', 14948],
+['American Samoa', 8257],
+['Arkansas', 5549],
+        ]);
+
+      var options = {
+        title: '2016 National Park Acreage',
+        chartArea: {left:1, width: 400, height: 300},
+        colors: ['#9900cc','#39004d','#141452','#e699ff','#0000e6','#0099ff','#1affff','#ff99ff','#ff00ff'],
+        fontSize: 10,
+        pieSliceText: 'label',
+        width: 500,
+        height: 300
+      };
+
+        var chart2 = new google.visualization.PieChart(document.getElementById('StatePieChart'));
+        chart2.draw(data2, options);
+      }
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+['Park', 'Acres'],
+['Wrangell-St. Elias NP & PRES', 8323146],
+['Gates of the Arctic NP & PRES', 7523897],
+['Denali NP & PRES', 4740911],
+['Katmai NP & PRES', 3674529],
+['Death Valley NP', 3373063],
+['Glacier Bay NP & PRES', 3223383],
+['Lake Clark NP & PRES', 2619816],
+['Yellowstone NP', 2219791],
+['Kobuk Valley NP', 1750716],
+['Everglades NP', 1400539],
+['Grand Canyon NP', 1201647],
+['Glacier NP', 1013129],
+['Olympic NP', 922650],
+['Big Bend NP', 801163],
+['Joshua Tree NP', 790636],
+['Yosemite NP', 761748],
+['Kenai Fjords NP', 669650],
+['Isle Royale NP', 571790],
+['Great Smoky Mountains NP', 522427],
+['North Cascades NP', 504781],
+['Kings Canyon NP', 461901],
+['Sequoia NP', 404063],
+['Canyonlands NP', 337598],
+['Hawaii Volcanoes NP', 323431],
+['Grand Teton NP', 310044],
+['Rocky Mountain NP', 265795],
+['Channel Islands NP', 249561],
+['Badlands NP', 242756],
+['Capitol Reef NP', 241904],
+['Mount Rainier NP', 236382],
+['Petrified Forest NP', 221416],
+['Voyageurs NP', 218200],
+['Shenandoah NP', 199195],
+['Crater Lake NP', 183224],
+['Biscayne NP', 172971],
+['Zion NP', 147237],
+['Redwood NP', 138999],
+['Great Sand Dunes NP & PRES', 107342],
+['Lassen Volcanic NP', 106589],
+['Saguaro NP', 91716],
+['Guadalupe Mountains NP', 86367],
+['Great Basin NP', 77180],
+['Arches NP', 76679],
+['Theodore Roosevelt NP', 70447],
+['Dry Tortugas NP', 64701],
+['Mammoth Cave NP', 52830],
+['Mesa Verde NP', 52485],
+['Acadia NP', 49057],
+['Carlsbad Caverns NP', 46766],
+['Bryce Canyon NP', 35835],
+['Wind Cave NP', 33971],
+['Haleakala NP', 33265],
+['Cuyahoga Valley NP', 32572],
+['Black Canyon of the Gunnison NP', 30750],
+['Pinnacles NP', 26686],
+['Congaree NP', 26276],
+['Virgin Islands NP', 14948],
+['National Park of American Samoa', 8257]
+        ]);
+
+      var options = {
+        title: '2016 National Park Acreage',
+        chartArea: {left:1, width: 400, height: 300},
+        colors: ['#9900cc','#39004d','#141452','#e699ff','#0000e6','#0099ff','#1affff','#ff99ff','#ff00ff'],
+        fontSize: 11,
+        width: 500,
+        height: 300
+      };
+
+        var chart = new google.visualization.PieChart(document.getElementById('ParkPieChart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <!--Table and divs that hold the pie charts-->
+    <table class="columns">
+      <tr>
+        <td><div id="ParkPieChart" ></div></td>
+        <td><div id="StatePieChart""></div></td>
+      </tr>
+    </table>
+  </body>
+</html>
