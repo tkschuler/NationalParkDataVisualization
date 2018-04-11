@@ -8,7 +8,7 @@ This project uses python to scrape and organize data from the U.S. National Park
 
 ### Prerequisites
 
-The following libraries will need to be installed. Many of the libraries are available in Anaconda
+The following libraries will need to be installed. Many of the libraries are available in Anaconda:
 
 ```
 Pandas
