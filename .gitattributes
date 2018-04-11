@@ -1,0 +1,4 @@
+* linguist-vendored
+*.py linguist-vendored=false
+*.csv linguist-vendored=false
+*.pdf linguist-vendored=false
